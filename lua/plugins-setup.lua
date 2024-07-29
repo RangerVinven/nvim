@@ -33,6 +33,10 @@ return packer.startup(function(use)
     use("szw/vim-maximizer") 
 
     use("tpope/vim-surround") -- Lets you surround word viw ys - motion - character
+    -- Do ys (yank surround) i (inner) w (any motion i.e, w) " (character to surround with)
+    -- i.e: ysiw"
+    -- OR visually select text, then do S", i.e: viwS"
+
     use("vim-scripts/ReplaceWithRegister")
     use("numToStr/Comment.nvim")
 
