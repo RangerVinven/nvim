@@ -9,8 +9,12 @@ local ensure_packer = function()
   return false
 end
 
-local packer_bootstrap = ensure_packer()
+-- Makes nvim read .njk files as .html files
+vim.cmd([[
+autocmd BufNewFile,BufRead *.njk set filetype=html
+]])
 
+local packer_bootstrap = ensure_packer()
 
 vim.cmd([[
   augroup packer_user_config
@@ -76,3 +80,4 @@ return packer.startup(function(use)
         require("packer").sync()
     end
 end)
+

@@ -60,15 +60,15 @@ end
 lspconfig["html"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
-  filetypes = {"html", "nunjucks"},
+  filetypes = {"html", "nunjucks", "njk"},
   settings = {
       html = {
           suggest = {
-              html5: true,
-              angular1: true,
-              ionic: true,
-              nunjucks: true,
-              react: true
+              html5 = true,
+              angular1 = true,
+              ionic = true,
+              nunjucks = true,
+              react = true
           }
       }
   }
