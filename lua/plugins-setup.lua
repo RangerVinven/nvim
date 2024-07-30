@@ -30,7 +30,7 @@ return packer.startup(function(use)
     use 'navarasu/onedark.nvim'
     use ("christoomey/vim-tmux-navigator")
     use("cohama/lexima.vim")
-    use("szw/vim-maximizer") 
+    use("szw/vim-maximizer")
 
     use("tpope/vim-surround") -- Lets you surround word viw ys - motion - character
     -- Do ys (yank surround) i (inner) w (any motion i.e, w) " (character to surround with)
@@ -45,8 +45,8 @@ return packer.startup(function(use)
     use("nvim-tree/nvim-tree.lua")
     use("kyazdani42/nvim-web-devicons")
 
-    use("nvim-lualine/lualine.nvim") 
-    
+    use("nvim-lualine/lualine.nvim")
+
     -- Fuzzy finding
     use({ "nvim-telescope/telescope-fzf-native.nvim", run="make"})
     use({ "nvim-telescope/telescope.nvim", branch="0.1.x" })
