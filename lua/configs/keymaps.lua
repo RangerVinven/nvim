@@ -21,13 +21,12 @@ vim.keymap.set("n", "<leader>d", "i<div></div><ESC>F<ha")
 vim.keymap.set("n", "<leader>h", "i#")
 
 -- Switch between windows (panes) using <C-e> and <C-t> (reverse)
-vim.keymap.set("n", "<C-h>", "<C-w>w", { noremap = true, silent = true })  -- Forward window switch
-vim.keymap.set("n", "<C-l>", "<C-w>W", { noremap = true, silent = true })  -- Reverse window switch
+vim.keymap.set("n", "<C-l>", "<C-w>w", { noremap = true, silent = true })  -- Forward window switch
+vim.keymap.set("n", "<C-h>", "<C-w>W", { noremap = true, silent = true })  -- Reverse window switch
+
+vim.keymap.set("n", "<C-j>", "<C-w>j", { noremap = true, silent = true })  -- Down window switch
+vim.keymap.set("n", "<C-k>", "<C-w>k", { noremap = true, silent = true })  -- Up window switch
 
 -- Split window vertically and horizontally
-vim.keymap.set("n", "<leader>sv", "<C-w>v", { noremap = true, silent = true }) -- Vertical split
-vim.keymap.set("n", "<leader>sh", "<C-w>s", { noremap = true, silent = true }) -- Horizontal split
-
--- Split window vertically and horizontally
-vim.keymap.set("n", "<leader>sv", "<C-w>v", { noremap = true, silent = true }) -- Vertical split
-vim.keymap.set("n", "<leader>sh", "<C-w>s", { noremap = true, silent = true }) -- Horizontal split
+vim.keymap.set("n", "<leader>sv", "<C-w>v<C-w>w", { noremap = true, silent = true }) -- Vertical split
+vim.keymap.set("n", "<leader>sh", "<C-w>s<C-w>j", { noremap = true, silent = true }) -- Horizontal split
